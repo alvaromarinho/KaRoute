@@ -5,7 +5,7 @@ require_once 'vendor/KaRoute.php';
 // error_reporting(E_ALL);
 // ini_set("display_errors", 1);
 
-$request = str_replace("/fascia", "", $_SERVER['REQUEST_URI']);
+$request = $_SERVER['REQUEST_URI'];
 KaRoute::setRequest($request);
 
 KaRoute::get('/', 	 'index');
